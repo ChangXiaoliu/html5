@@ -1,76 +1,63 @@
-    *{
-      margin:0;
-      padding:0;
+* {
+        margin: 0;
+        padding: 0;
+        list-style: none;
     }
-    ul {
-      list-style: none;
+    
+    .wrap {
+        height: 205px;
+        width: 338px;
+        margin: 60px auto;
+        overflow: hidden;
+        position: relative;
     }
-    img {
-      border: 0;
+    
+    .wrap ul {
+        position: absolute;
     }
-    a {
-      text-decoration: none;
+    
+    .wrap ul li {
+        height: 205px;
     }
-    #slide {
-      width: 750px;
-      height: 400px;
-      box-shadow: 0px 0px 5px #c1c1c1;
-      margin: 20px auto;
-      position: relative;
-      overflow: hidden;
+    
+    .wrap ol {
+        position: absolute;
+       left:120px;
+        bottom: 10px;
+        z-index: 1;
     }
-    #slide ul {
-      position: absolute;
-      left: 0px;
-      top: 0px;
-      height: 400px;
-      width: 11930px;
+    
+    .wrap ol li {
+        height: 20px;
+        width: 20px;
+        background: #ccc;
+        border-radius:10px;
+        margin-left: 5px;
+        color: #000;
+        float: left;
+        line-height: center;
+        text-align: center;
+        cursor: pointer;
     }
-    #slide ul li {
-      width: 750px;
-      height: 400px;
-      overflow: hidden;
-      float: left;
+    
+    .wrap ol .on {
+        background: #E97305;
+        color: #fff;
     }
-    #slide .ico {
-      width: 750px;
-      height: 20px;
-      /*overflow: hidden;*/
-      text-align: center;
-      position: absolute;
-      left: 0px;
-      bottom: 10px;
-      z-index: 1;
-    }
-    #slide .ico a {
-      display: inline-block;
-      width: 20px;
-      height:10px;
-      background: url(../images/out.png) no-repeat 0px 0px;
-      margin: 0px 5px;
-    }
-    #slide .ico .active {
-      background: url(../images/out1.png) no-repeat 0px 0px;
-    }
-    #btnLeft {
-      width: 60px;
-      height: 60px;
-      left: 0px;
-      top: 200px;
-      background: url(../images/left.png) no-repeat 0px 0px;
-      opacity: 0.4;
-      position: absolute;
-      z-index: 2;
+    .wrap .arrow {
+    cursor: pointer;
+    width: 20px;
+    height: 25px;
+    position: absolute;
+    z-index: 2;
+    top: 100px;
     }
 
-    #btnRight {
-      width: 30px;
-      height: 30px;
-      right: 0px;
-      top: 200px;
-      background: url(../images/right.png) no-repeat 0px 0px;
-      position: absolute;
-      opacity: 0.4;
-      z-index: 2;
+    .wrap #prev{
+      left:0px;
+      background: url(../images/left.png);
     }
-   
+    .wrap #next{
+      right:0px;
+       background: url(../images/right.png);
+    }
