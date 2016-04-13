@@ -1,142 +1,196 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
-	<title>登录弹出层</title>
-	<link href="style/main0329.css" rel="stylesheet" type="text/css"></link>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"></meta>
+    <title>登录弹出层</title>
+    <link href="style/main0329.css" rel="stylesheet" type="text/css"></link>
+    <script src="js/my.js"></script>
 </head>
 
 <body>
-	<div id="header">
-		<div class="container">
-			<a id="logo" href="/" target="_self"></a>
-			<ul id="nav-item" class="l">
-				<li class="l"><a href="#">课程</a></li>
-				<li class="l"><a href="#">计划</a></li>
-				<li class="l"><a href="#">猿问</a></li>
-				<li class="l"><a href="#">文章</a></li>
-			</ul>
-			<div id="login-area">
-				<a id="btnLogin" class="login-btn" hidefocus="treu" href="#">登录</a>
-			</div>
-		</div>
-	</div>
-	<div id="main">
-		<div class="slide-container">
-			<ul class="slideUl">
-				<li><a><img src="img/1.jpg"></img></a></li>
-				<li><a><img src="img/2.jpg"></img></a></li>
-				<li><a><img src="img/3.jpg"></img></a></li>
-			</ul>
-			<div class="dotBox">
-				<span class="active"></span>
-				<span class=""></span>
-				<span class=""></span>
-			</div>
-			<a href="javascript:;" id="prev" class="arrow">&lt;</a>
-			<a href="javascript:;" id="next" class="arrow">&gt;</a>
-			<div class="discrip">
-			<a href="javascript:;">了解更多</a>
-		</div>
-		</div>
-		
-		<div id="freshcourse" class="wraper">
-			<h2>课程</h2>
-			<ul>
-				<li>
-					<img src="http://img.mukewang.com/56f9e7e3000119fe06000338-280-160.jpg">					
-					</img>
-					<h5>Android-五子连珠</h5>					
-					<div>
-						<span class="l">23小时前更新</span>
-						<span class="r">1355人学习</span>
-					</div>
-				</li>
-				<li>
-					<img src="http://img.mukewang.com/56f8a3a50001f03406000338-280-160.jpg">					
-					</img>
-					<h5>R语言之数据可视化</h5>					
-					<div>
-						<span class="l">23小时前更新</span>
-						<span class="r">1355人学习</span>
-					</div>
-				</li>
-				<li>
-					<img src="http://img.mukewang.com/56c6f2c50001f49b06000338-280-160.jpg">					
-					</img>
-					<h5>PHP实现手机归属地查询</h5>					
-					<div>
-						<span class="l">23小时前更新</span>
-						<span class="r">1355人学习</span>
-					</div>
-				</li>
-				<li>
-					<img src="http://img.mukewang.com/56d640a30001fc0d06000338-280-160.jpg">					
-					</img>
-					<h5>MongoDB复制集-容灾核心选举</h5>					
-					<div>
-						<span class="l">23小时前更新</span>
-						<span class="r">1355人学习</span>
-					</div>
-				</li>
-				<li>
-					<img src="http://img.mukewang.com/566533450001fd6c06000338-280-160.jpg">					
-					</img>
-					<h5>Unity3D-菜鸟先飞之NGUI基础</h5>					
-					<div>
-						<span class="l">23小时前更新</span>
-						<span class="r">1355人学习</span>
-					</div>
-				</li>
-				<li>
-					<img src="http://img.mukewang.com/56cd23a50001595f06000338-280-160.jpg">					
-					</img>
-					<h5>Ajax技术在购物车中的应用(PHP篇)</h5>					
-					<div>
-						<span class="l">23小时前更新</span>
-						<span class="r">1355人学习</span>
-					</div>
-				</li>
-			</ul>
-			
-		</div>
-		<a href="javascript:;" id="enterbtn-large">点击进入</a>
-	</div>
-	<div id="footer">
-		<div class="footWrap">
-			<div class="footLogo">
-			</div>
-			<hr>
-			<ul>
-			    <li class="des">
-			    	<p>我们的使命：传播互联网最前沿技术，帮助更多的人实现梦想！</p>
-			        <p>
-			            京ICP备 13046642号-2
-			        </p>
-			    </li>
-			    <li>
-			        <p><a href="http://www.imooc.com/">网站首页</a></p>
-			        <p><a href="/about/us">关于我们</a></p>
-			        <p><a href="/about/job">人才招聘</a></p>
-			    </li>
-			    <li>
-			        <p> <a href="/about/recruit">内容招募</a></p>
-			        <p> <a href="/about/contact">联系我们</a></p>
-			        <p> <a href="/user/feedback">意见反馈</a></p>
-			    </li>
-			    <li class="attention">
-			        在这里关注我们的动向
-			        <br>
-			        <a id="qzone" href="http://user.qzone.qq.com/1059809142/" target="_blank" title="QQ空间">QQ空间</a>
-			        <a id="sinaweibo" href="http://weibo.com/u/3306361973" target="_blank" title="新浪微博">新浪微博</a>
-			        <a id="qqweibo" href="http://t.qq.com/mukewang999" target="_blank" title="腾讯微博">腾讯微博</a>
-			         <a id="weixin" href="http://t.qq.com/mukewang999" target="_blank" title="微信">微信
-			         </a>
-			    </li>
-			</ul>
-
-		</div>
-	</div>
-
+    <div id="header">
+        <div class="container">
+            <a id="logo" href="/" target="_self"></a>
+            <ul id="nav-item" class="l">
+                <li class="l"><a href="#">课程</a></li>
+                <li class="l"><a href="#">计划</a></li>
+                <li class="l"><a href="#">猿问</a></li>
+                <li class="l"><a href="#">文章</a></li>
+            </ul>
+            <div id="login-area">
+                <ul>
+                    <li>
+                        <a id="search" class="search-btn" hidefocus="treu" href="#">搜索</a>
+                    </li>
+                    <li>
+                        <a id="down" class="down-btn" hidefocus="treu" href="#">APP下载</a>
+                    </li>
+                    <li>
+                        <a id="btnLogin" class="login-btn" hidefocus="treu" href="#">登录</a>
+                    </li>
+                    <li>
+                        <a id="regist" class="regist-btn" hidefocus="treu" href="#">注册</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div class="slide-container">
+            <ul class="slideUl">
+                <li>
+                    <a><img src="img/1.jpg"></img>
+                    </a>
+                    <div class="discrip">
+                        <a href="javascript:;">了解更多</a>
+                    </div>
+                </li>
+                <li>
+                    <a><img src="img/2.jpg"></img>
+                    </a>
+                </li>
+                <li>
+                    <a><img src="img/3.jpg"></img>
+                    </a>
+                </li>
+            </ul>
+            <div class="dotBox">
+                <span class="active"></span>
+                <span class=""></span>
+                <span class=""></span>
+            </div>
+            <a href="javascript:;" id="prev" class="arrow">&lt;</a>
+            <a href="javascript:;" id="next" class="arrow">&gt;</a>
+        </div>
+        <div id="freshcourse" class="wraper">
+            <h2>课程</h2>
+            <ul>
+                <li>
+                    <img src="http://img.mukewang.com/56f9e7e3000119fe06000338-280-160.jpg">
+                    </img>
+                    <h5>Android-五子连珠</h5>
+                    <div>
+                        <span class="l">23小时前更新</span>
+                        <span class="r">1355人学习</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="http://img.mukewang.com/56f8a3a50001f03406000338-280-160.jpg">
+                    </img>
+                    <h5>R语言之数据可视化</h5>
+                    <div>
+                        <span class="l">23小时前更新</span>
+                        <span class="r">1355人学习</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="http://img.mukewang.com/56c6f2c50001f49b06000338-280-160.jpg">
+                    </img>
+                    <h5>PHP实现手机归属地查询</h5>
+                    <div>
+                        <span class="l">23小时前更新</span>
+                        <span class="r">1355人学习</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="http://img.mukewang.com/56d640a30001fc0d06000338-280-160.jpg">
+                    </img>
+                    <h5>MongoDB复制集-容灾核心选举</h5>
+                    <div>
+                        <span class="l">23小时前更新</span>
+                        <span class="r">1355人学习</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="http://img.mukewang.com/566533450001fd6c06000338-280-160.jpg">
+                    </img>
+                    <h5>Unity3D-菜鸟先飞之NGUI基础</h5>
+                    <div>
+                        <span class="l">23小时前更新</span>
+                        <span class="r">1355人学习</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="http://img.mukewang.com/56cd23a50001595f06000338-280-160.jpg">
+                    </img>
+                    <h5>Ajax技术在购物车中的应用(PHP篇)</h5>
+                    <div>
+                        <span class="l">23小时前更新</span>
+                        <span class="r">1355人学习</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <a href="javascript:;" id="enterbtn-large">点击进入</a>
+        <div id="loginReg">
+            <div class="login">
+                <div class="top">
+                    <span class="lgtop" id="lgTopBtn">登录</span>
+                    <a href="#" id="close"></a>
+                </div>
+                <input class="info" type="text" id="name" placeholder="请输入登录手机号/邮箱"/>
+                <br>
+                <input class="info" type="password" id="password" placeholder="6~16位密码，区分大小写，不能用空格"/>
+                <br>
+                <input type="checkbox" class="leftAlg" />下次自动登录
+                <a href="javascript:;" class="forget">忘记密码</a>
+                <br>
+                <button value="登录" ></button>
+                <div class="thirdLg leftAlg">
+                    其他登录方式
+                </div>
+            </div>
+            <div class="regist">
+                <div class="top">
+                    <span class="rgtop" id="rgTopBtn">注册</span>
+                    <a href="#" id="close"></a>
+                </div>
+                <input class="info" type="text" id="name" placeholder="请输入注册手机号/邮箱"/>
+                <br>
+                <input class="info" type="text" id="authCode" placeholder="请输入验证码"/>
+                <br>
+                <button value="注册"></button>
+                <div>
+                    <label id="thirdLogin"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footWrap">
+            <div class="footLogo">
+            </div>
+            <hr>
+            <ul>
+                <li class="des">
+                    <p>我们的使命：传播互联网最前沿技术，帮助更多的人实现梦想！</p>
+                    <br>
+                    <p>
+                        京ICP备 13046642号-2
+                    </p>
+                </li>
+                <li>
+                    <p><a href="http://www.imooc.com/">网站首页</a></p>
+                    <p><a href="/about/us">关于我们</a></p>
+                    <p><a href="/about/job">人才招聘</a></p>
+                </li>
+                <li>
+                    <p> <a href="/about/recruit">内容招募</a></p>
+                    <p> <a href="/about/contact">联系我们</a></p>
+                    <p> <a href="/user/feedback">意见反馈</a></p>
+                </li>
+                <li class="attention">
+                    在这里关注我们的动向
+                    <br>
+                    <a id="qzone" href="http://user.qzone.qq.com/1059809142/" target="_blank" title="QQ空间"></a>
+                    <a id="sinaweibo" href="http://weibo.com/u/3306361973" target="_blank" title="新浪微博"></a>
+                    <a id="qqweibo" href="http://t.qq.com/mukewang999" target="_blank" title="腾讯微博"></a>
+                    <a id="weixin" href="http://t.qq.com/mukewang999" target="_blank" title="微信">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
 </body>
 </html>
