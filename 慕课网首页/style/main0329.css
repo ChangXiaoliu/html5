@@ -75,8 +75,16 @@ body{
 #nav-item a:hover{
   background:#A9A9A9;
 }
+#login-area{
+  position: absolute;
+  right: 0
+}
+#login-area li{
+  float:left;
+}
 #login-area a{
   display: block;
+  width:40px;
   padding:10px 10px;
   color:#F5F5F5;
   font-size: 15px;
@@ -84,7 +92,6 @@ body{
   height: 36px;
   line-height: 36px;
   right:50px;
-  position: absolute;
 }
 #login-area a:hover{
   background:#8B0000;
@@ -94,9 +101,42 @@ body{
 }
 .slide-container{
   position: relative;
+ height:600px;
+  overflow: hidden;
+}
+.slideUl{
+  width:100%;
+  overflow: hidden;
+}
+
+.slideUl img{
   width:100%;
   height:600px;
-  overflow: hidden;
+}
+.slideUl li:first-child{
+  position: relative;
+}
+.discrip{
+  position:absolute;
+  z-index: 20;
+  top: 60%;
+  right:300px;
+  width:100px;
+  height:28px;
+  line-height:28px;
+  background-image:url(../img/more.png);
+  background-repeat:no-repeat;
+  background-position: left;
+}
+.discrip a{
+  position: relative;
+  left:30px;
+  font-size:16px;
+  color:#666;
+}
+.discrip a:hover{
+ color:#000;
+
 }
 .dotBox{
   position: absolute;
@@ -118,7 +158,7 @@ body{
   background: gray;
 }
 .dotBox span.active{
-  border-radius:5px;
+
   background: #fff;
 }
 a.arrow{
@@ -145,29 +185,7 @@ background-color:RGBA(0,0,0,1);
 #next{
   right:0;
 }
-.discrip{
-  position:absolute;
-  z-index: 20;
-  top: 58%;
-  right:25%;
-  width:100px;
-  height:28px;
-  line-height:28px;
 
-  background-image:url(../img/more.png);
-  background-repeat:no-repeat;
-  background-position: left;
-}
-.discrip a{
-  position: relative;
-  left:30px;
-  font-size:16px;
-  color:#666;
-}
-.discrip a:hover{
- color:#000;
-
-}
 .wraper{
   width:900px;
   height:560px;
@@ -212,7 +230,7 @@ background-color:RGBA(0,0,0,1);
   background:#8B0000;
 }
 #footer{
-    background-color:#8e999d;
+    background-color:#2a2c2e;
 }
 .footWrap{
   margin: 20px auto 0;
@@ -223,7 +241,7 @@ background-color:RGBA(0,0,0,1);
 }
 .footLogo{
   height:50px;
-  background:url(../img/footer_icon_logo.png) left top no-repeat;
+  background:url(../img/footer_icon_logo.png) left no-repeat;
 }
 .footWrap li{
   float: left;
@@ -235,10 +253,88 @@ background-color:RGBA(0,0,0,1);
   /*margin-right:px;*/
 }
 .attention a{
-  /*float:left;*/
-  margin-right:65px;
+  float:left;
+  margin-right:10px;
+  width:31px;
+  height:32px;
+  color:#5e5e5e;
+background:url(../img/sprit.png);
+background-repeat:no-repeat;
+opacity: 0.5;
+}
+.attention a:hover{
+  opacity: 1;
 }
 #qzone{
-  background:url(../img/sprit.png) 0px -40px no-repeat;
+  background-position:0px -30px;
+}
+#sinaweibo{
+    background-position:-39px -30px; 
+}
+#qqweibo{
+   background-position:-78px -30px; 
+}
+#weixin{
+   background-position:-117px -30px; 
+}
+#loginReg{
+  display: none;
+  border:1px solid #999;
+  width:380px;
+  height:270px;
+  z-index:100;
+  position: fixed;
+  top:20%;
+  left:40%;
+  background-color:#fff ;
+  box-shadow:0 0 2px #999;
+}
+#loginReg .top{
+  position: relative;
+margin-top: 10px;
+}
+#loginReg #close{
+  position: absolute;
+  right:0;
+   background:url(../img/close2.png) right no-repeat;
+   width:34px;
+   height: 27px;
+}
+#loginReg input.info{
+  padding:5px;
+  border:1px solid #999;
+  width:260px;
+  height:30px;
+  margin:10px 50px;
+}
+.lgtop{
+  padding:10px;
+  font-size: 20px;
+  width:50px;
+  color: red;
+}
+#loginReg span{
+  text-align: center;
+  margin-left: 150px;
+}
+#password{
+  background: url(../img/pwd.png) right no-repeat;
+}
+#loginReg .leftAlg{
+  margin-left: 50px;
+}
+#loginReg .forget{
+  display: inline-block;
+  margin-left: 110px;
+}
+#loginReg .thirdLg{
+  width:260px;
+  height: 40px;
+  line-height: 40px;
+  background: url(../img/thirdlogin.png) no-repeat right;
+}
 
+
+.regist{
+  display: none;
 }
